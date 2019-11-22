@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			outline: none;
+			text-decoration: none;
+		}
+		#box{
+			width: 1380px;
+			height: 1500px;
+			margin: 0 auto;
+			background: url(images/body_bg.jpg);
+		}
+		.bo{
+			width: 990px;
+			height: 1300px;
+			/*background: #348;*/
+			margin-left: 200px;
+			float: left;
+		}
+		.head{
+			width: 1380px;
+			height: 100px;
+			
+			float: left;
+		}
+		.lo{
+			float: left;
+			margin-left: 30px;
+			margin-top: 26px;
+		}
+		.tt{
+			float: left;
+			margin-left: 400px;
+			margin-top: 7px;
+		}
+		.zhuan{
+			float: left;
+			color:#937902;
+			font-size: 25px;
+			font-weight: 900;
+			font-style: italic;
+			margin-left: 120px;
+			text-indent: 24px;
+			margin-top: 10px;
+		}
+
+		.wz{
+			float: left;
+			font-size: 13px;
+			color:#666;
+			margin-top: 15px;
+			margin-left: -120px;
+		}
+		.nav{
+			float: left;
+			background: #921422;
+			width: 990px;
+			height: 44px;
+		}
+		.sy{
+			float: left;
+		}
+		.rz{
+			float: left;
+			padding: 0 20px;
+
+		}
+		.xo{
+			padding:0 20px;
+			color:#fff;
+			font-size: 15px;
+			line-height: 44px;
+			/* background: url(images/hezuo_bg.jpg) no-repeat right; */
+			padding: 0 20px;
+		}
+		.rz a:hover{
+			background:#ffaf06;
+		}
+		.rz .xx{
+			/* background:#ffaf06; */
+			color: #fff;
+		}
+		.ban{
+			float: left;
+		}
+		.bann{
+			width: 990px;
+		}
+		.ma{
+			width: 990px;
+			height: 285px;
+			/*background: #825;*/
+			float: left;
+			margin-top: 12px;
+		}
+		.ma1{
+			width: 470px;
+			height: 285px;
+			/*background: #946;*/
+			float: left;
+			margin-left: 17px;
+		}
+		.carousel{
+			float: left;
+			width: 470px;
+			height: 300px;
+			
+			/*background: #934;*/
+			position: relative;
+			overflow: hidden;
+
+		}
+		.carousel ul{
+            width: 100%;
+            height: 100%;
+        }
+        .carousel ul li{
+            position: absolute;
+        }
+        .carousel ul li a img{
+            width: 470px;
+            height: 285px;
+        }
+        .bullet{
+            position: absolute;
+            font-size: 0;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -42px;
+        }
+        .bullet span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	margin-left: 15px;
+	border-radius: 10px;
+        }
+        .bullet span:first-child{
+            margin-left: 0;
+        }
+        /* .switch{
+
+        } */
+        .switch span{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: rgba(0,0,0,.1);
+	font-size: 20px;
+	color: #ffffff;
+	top: 50%;
+	margin-top: -25px;
+	cursor: pointer;
+	font-family: "宋体";
+        } 
+		.switch span:hover{
+
+	background-color: rgba(0,0,0,.5);
+
+        }
+        .prev{
+            left: 20px;
+        }
+        .next{
+            right: 0;
+        }
+        .active{
+            background-color: red !important;
+        }
+        .ma2{
+			width: 470px;
+			height: 280px;
+			/*background: #738;*/
+			float: left;
+			margin-left: 19px;
+        }
+        .ma3{
+        	width: 470px;
+        	height: 155px;
+        	border-bottom: dashed 1px #cecece;
+        	float: left;
+        }
+       .zq{
+			color:#881f30;
+			margin-top: 5px;
+        } 
+        .zg{
+        	font-size: 12px;
+        	color:#666;
+        	margin-top: 7px;
+        	line-height: 15px;
+        }
+        .span{
+        	color:pink;
+        }
+        .zq1{
+			color:#000;
+			margin-top: 5px;
+        } 
+        .ma4{
+			width: 470px;
+			height: 30px;
+			/*background: #618;*/
+			float: left;
+			margin-top: 13px;
+        }
+        .dian{
+			margin-left: 7px;
+			float: left;
+			margin-top: 20px;
+        }
+        .zgg{
+        	font-size: 12px;
+        	float: left;
+        	color:#666;
+        	margin-top: 13px;
+        	margin-left: 5px;
+        }
+        .boo{
+        	width: 990px;
+        	height: 30px;
+        	float: left;
+        	/*background: #735;*/
+        }
+        .ztt{
+        	float: left;
+        	width: 930px;
+        	margin-left: 35px;
+        	margin-top: 15px;
+        }
+        .ko{
+        	width: 940px;
+        	height: 114px;
+        	/*background: #943;*/
+        	float: left;
+        	margin-top: 20px;
+        	margin-left: 35px;
+        }
+        .ko1{
+        	width: 350px;
+        	height: 114px;
+        	/*background: #825;*/
+        	float: left;
+        	border-bottom: dashed 1px #cecece;
+        }
+         .mao{
+			width: 470px;
+			height: 23px;
+			/*background: #618;*/
+			float: left;
+			margin-top: 2px;
+        }
+        .ko2{
+        	width: 530px;
+        	margin-left: 35px;
+        	height: 114px;
+        	/*background: #394;*/
+        	float: left;
+        	border-bottom: dashed 1px #cecece;
+        }
+        .zhuzi{
+        	float: right;
+        	margin-right: 10px;
+        	margin-top: -95px;
+        }
+        	.nav1{
+        		margin-top: 80px;
+			float: left;
+			background: #921422;
+			width: 990px;
+			height: 44px;
+		}
+		.sy1{
+			float: left;
+		}
+		.rz1{
+			float: left;
+			padding: 0 20px;
+			margin-left:150px;
+
+		}
+		.ooop{
+			padding: 0 20px;
+			line-height: 44px;
+			font-size: 15px;
+			color:#fff;
+
+		}
+		.uo{
+			float: left;
+			color:#fff;
+			font-size: 12px;
+			margin-left: 90px;
+			margin-top: 8px;
+		}
+		.uo1{
+			float: left;
+			color:#fff;
+			font-size: 12px;
+			margin-left: 220px;
+			margin-top: 8px;
+		}
+		.uo2{
+			float: left;
+			color:#fff;
+			font-size: 12px;
+			margin-left: 320px;
+			margin-top: 8px;
+		}
+		.bdd{
+			float: left;
+			margin-top: 40px;
+			margin-left: -250px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="box">	
+	<div class="bo">
+	<div class="head">
+		<img class="lo" src="images/log.jpg" alt="">
+		<img class="tt" src="images/tt.jpg" alt=""><br>
+		<p class="zhuan">专业融资服务机构 010-6894-6688</p><br>
+		<p class="wz">www.brtpawn.com</p>
+	</div>
+	<div class="nav">
+		<ul class="sy">
+			<li class="rz">
+				<a class="xo" href="">首页</a>
+				<a class="xo" href="">融资产品</a>
+				<a class="xo" href="">主营业务</a>
+				<a class="xo" href="">宝瑞通商城</a>
+				<a class="xo" href="">分支结构</a>
+				<a class="xo" href="">关于我们</a>
+				<a class="xx" href="">信息动态</a>
+				<a class="xo"  href="">人力资源</a>
+				<a class="xo" href="">客户服务</a>
+			</li>
+		</ul>
+	</div>
+	<div class="ban">
+	<img class="bann" src="images/banner1.jpg" alt="">
+	</div>
+	<div class="ma">
+	<div class="ma1">
+		<div class="carousel">
+				<div class="carousel" @mouseenter="enter" @mouseleave="leave">
+    			<transition-group tag="ul" name="image" enter-active-class="animated lightSpeedIn" leave-active-class="animated lightSpeedOut">
+        	<li v-for='(image,index) in img' :key='index' v-show="index === mark">
+            <a href="javascript:;">
+                <img :src="image">
+            </a>
+        	</li>
+    </transition-group>
+    <div class="bullet">
+        <span v-for="(item,index) in img.length" :class="{'active':index === mark}"
+         @click="change(index)" :key="index"></span>
+    </div>
+    <div class="switch">
+        <span class="prev" @click="prev">&lt;</span>
+        <span class="next" @click="next">&gt;</span>
+    </div>
+</div>
+	</div>	
+	</div>
+	<div class="ma2">
+	<div class="ma3">
+
+	<h3 class="zq">证券业协会证抓紧制定券商信息制度指引</h3>
+	<p class="zg">中国证券副会长秘书陈自强透露，正在抓紧指定证券公司信息制度指引，中国证券副会长秘书陈自强透露，正在抓紧指定证券公司信息制度指引，中国证券副会长。<span class="span">[详细]</span></p>
+	<h3 class="zq1">沈明高：未来面临的通胀压力前所未有</h3>	
+	<p class="zg">中国证券副会长秘书陈自强透露，正在抓紧指定证券公司信息制度指引，中国证券副会长秘书陈自强透露，正在抓紧指定证券公司信息制度指引，中国证券副会长。<span class="span">[详细]</span></p>
+	</div>
+	<div class="ma4">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="ma4">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="ma4">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+
+	</div>
+	</div>
+	<div class="boo">
+		<img class="ztt" src="images/ztt.jpg" alt="">
+	</div>
+	<div class="ko">
+	<div class="ko1">
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	</div>
+	<div class="ko2">
+		<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<img class="zhuzi" src="images/zhuzi.jpg" alt="">
+	</div>
+	</div>
+	<div class="ko">
+	<div class="ko1">
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	</div>
+	<div class="ko2">
+		<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<img class="zhuzi" src="images/zhuzi.jpg" alt="">
+	</div>
+	</div>
+	<div class="ko">
+	<div class="ko1">
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	</div>
+	<div class="ko2">
+		<div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div><div class="mao">
+	<img class="dian" src="images/dian7.jpg" alt="">
+	<p class="zgg">王庆：寻找行业龙头企业的整合机会&emsp;<span>[11-05]</span></p>
+	</div>
+	<img class="zhuzi" src="images/zhuzi.jpg" alt="">
+	</div>
+	</div>
+	<div class="nav1">
+		<ul class="sy1">
+			<li class="rz1">
+				<a class="ooop" href="">联系我们</a>
+				<a class="ooop" href="">金融产品</a>
+				<a class="ooop" href="">主法律声明</a>
+				<a class="ooop" href="">咨询建议</a>
+				<a class="ooop" href="">友链连接</a>
+				<a class="ooop" href="">网站地图</a>
+				
+			</li>
+		</ul>
+	</div>
+	<p class="uo">Copyyright&emsp;2005-2011&emsp;北京宝瑞通典当行有限责任公司&emsp;All&emsp;Reserved&emsp;总部地址：北京朝阳区河西里50号（北三环辅路太阳宫东北角）</p>
+	<p class="uo1">咨询电话：民品：010-6846482688-8818&emsp;汽车：010-686446688-8829&emsp;房产：010-686446688-8829</p>
+	<p class="uo2">京ICP备0615463131226号&emsp;技术支持：易伟思&emsp;北京网站设计</p>
+	<img class="bdd" src="images/bdd.jpg" alt="">
+
+
+
+</div>
+</div>
+<script src="js/vue.min.js"></script>
+
+	<script src="jquery.js"></script>
+	<script>
+		//  $('.sy').mouseenter(function() {
+        //     $(this).css('font-weight', 'bold')
+        //     $(this).css('border-bottom', '2px solid #3f77aa')
+        // }).mouseleave(function() {
+        //     $(this).css('font-weight', 'normal')
+        //     $(this).css('border', 'none')
+        // })
+        //  $('.fx').mouseenter(function() {
+        //     $(this).css('font-weight', 'bold')
+        //     $(this).css('border-bottom', '2px solid #3f77aa')
+        // }).mouseleave(function() {
+        //     $(this).css('font-weight', 'normal')
+        //     $(this).css('border', 'none')
+        // })
+        //  $('.dn').mouseenter(function() {
+        //     $(this).css('font-weight', 'bold')
+        //     $(this).css('border-bottom', '2px solid #3f77aa')
+        // }).mouseleave(function() {
+        //     $(this).css('font-weight', 'normal')
+        //     $(this).css('border', 'none')
+        // })
+
+         var vm = new Vue({
+        el:'.carousel',
+        data:{
+            mark:0,
+            img:[
+                    'images/bolan.jpg',
+                    '../image/tu1.jpg',
+                    '../image/tu2.jpg',
+                    '../image/tu3.jpg'
+            ],
+            time:null
+        },
+        methods:{   //添加方法
+            change(i){
+                // this.mark = i;
+            },
+            prev(){
+                this.mark--;
+                if(this.mark === -1){
+                    // this.mark = 3;
+                    return
+                }
+            },
+            next(){
+                this.mark++;
+                if(this.mark === 4){
+                    // this.mark = 0;
+                    return
+                }
+            },
+            autoPlay(){
+                this.mark++;
+                if(this.mark === 4){
+                    // this.mark = 0;
+                    return
+                }
+            },
+            // play(){
+            //     this.time = setInterval(this.autoPlay,3000);
+            // },
+            enter(){
+                console.log('enter')
+                clearInterval(this.time);
+            },
+            leave(){
+                console.log('leave')
+                this.play();
+            }
+        },
+        created(){
+            this.play()
+        }
+    })
+      
+
+        
+	</script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+.clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/bj.png');
+}
+#box{
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-color: #fffdfe;
+    width: 80%;
+    height: 95px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul li{
+    text-align: right;
+}
+header ul li:nth-child(2){
+    color: #a07f22;
+    font-size: 17px;
+}
+header ul li:nth-child(2) span{
+    font-size: 20px;
+    padding-left: 10px;
+}
+header ul li:last-child{
+    color: grey;
+}
+nav{
+    width: 80%;
+    height: 44px;
+    background-color: #8c1322;
+    margin: 0 auto;
+    /* box-shadow: -1 0 1px black; */
+}
+nav ul{
+    height: 100%;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    background: url('../image/xian.png') no-repeat right;
+    padding-right: 20px;
+}
+nav ul li a{
+    color: #ffffff;
+}
+nav ul li:first-child{
+    margin-left: 10px;
+}
+nav ul li:last-child{
+    background: none;
+}
+section{
+    width: 80%;
+    height: 258px;
+    margin: 0 auto;
+}
+
+/* 轮播图 */
+.fl{float: left;}
+	.fr{float: right;}
+	.cb{clear: both;}
+	ul{list-style: none;}
+	.lunbo{width: 100%px;height: 100%;overflow: hidden;position: relative;margin: 0 auto;}
+	.lunbo img{float: left;}
+    .box{width: 6860px}
+    .box img{
+        width: 980px;
+        height: 258px;
+    }
+	.btn{width: 100%;height: 100px;position: absolute;top: 30%;display: none;}
+	.lunbo .btn-l,.lunbo .btn-r{background-color: rgba(249,38,114,0.5);width: 50px;height: 100px;font-size: 82px;color: #ccc;border-radius: 10px;}	
+	.list-li{position: absolute;bottom: 5px;left: 40%}
+	.list-li li{float: left;width: 10px;height: 10px;background-color: #F9263E;line-height: 50px;text-align: center;border-radius: 50%;margin-left: 10px;color: #fff;font-size: 22px;}
+/* 	点缀 */
+	.dianzui{width: 100%;height: 4px;background-color: #ccc;position: absolute;bottom: 0px}
+	.dian{width: 1px;height:4px;background-color: red }
+/* 遮罩层 */
+	.fugai{position: absolute;left: 0;top: 0;height: 100%;width: 730px;
+		}
+	.fugai1,.fugai2,.fugai3{width: 100%;height: 258px;float: left;z-index: 999;overflow: hidden;}
+	.btn-con-l,.btn-con-r{width: 150px;height: 100px;}
+    .btn-con-l img,.btn-con-r img{width: 100%;height: 100%}
+    
+
+    main{
+        width:80%;
+        height: 570px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .left{
+        width: 70%;
+        height: 100%;
+    }
+    .zy{
+        width: 100%;
+        height: 40%;
+        border: 1px solid grey;
+    }
+    .zy h2{
+        width: 100%;
+        height: 25px;
+        background-color: #f6f6f6;
+        border-bottom: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+    }
+    .zy h2 span{
+        font-size: 15px;
+    }
+    .zy dl{
+        float: left;
+        width: 25%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 5%;
+        border: 1px solid grey;
+    }
+    .zy dl dt{
+        width: 100%;
+        height: 105px;
+    }
+    .zy dl dt img{
+        width: 100%;
+        height: 100%;
+    }
+    .xx{
+        width: 100%;
+        height: 55%;
+        border: 1px solid grey;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .xx dl {
+        width: 30%;
+        /* background: red; */
+    }
+    .xx dl dt img{
+        width: 100%;
+    }
+    .xx dl dd{
+        font-size: 13px;
+    }
+    .xx .ul{
+        width: 60%;
+        height: 100%;
+    }
+    .xx .ul li{
+        width: 96%;
+        height: 10%;
+        border-bottom: 1px dashed grey;
+        background:url('../image/dian1.jpg') no-repeat left;
+    }
+    .xx .ul li span{
+        float: right;
+    }
+    .ul1{
+        /* height: 30%; */
+        border-bottom: 1px solid grey;
+    }
+    .ul1 li{
+        float: left;
+        width: 18%;
+        height: 90%;
+        margin-left: 5%;
+        border: none;
+        border: 1px solid grey;
+        background-image: none;
+    }
+    .ul li:first-child{
+        border-bottom: none;
+        height: 10%;
+    }
+    .right{
+        width: 30%;
+        height: 100%;
+    }
+    .fz{
+        width: 90%;
+        height: 40%;
+        border: 1px solid grey;
+    }
+    .ul2{
+        display: flex;
+        justify-content: flex-start;
+        background: red;
+    }
+    .ul2 li{
+        width: 30%;
+        height: 80%;
+        text-align: center;
+    }
+    .ul2 li:hover{
+        background: #ffffff;
+        border-radius: 15px 15px 0px 0px;
+        color: red;
+    }
+    .ul3 li{
+        width: 80%;
+        margin:  0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3%;
+        border-bottom: 1px dashed grey;
+        background: url('../image/dian1.jpg') no-repeat left;
+    }
+    .fz p{
+        float: right;
+    }
+    .hd{
+        width: 100%;
+        height: 70%;
+    }
+    .hd p{
+        float: right;
+    }
+    .hd dl{
+        width: 100%;
+    }
+    .hd dl dt img{
+        width: 90%;
+    }
+    .hd dl dd{
+        font-size: 13px;
+    }
+    .nav1{
+        		margin-top: 80px;
+			float: left;
+			background: #921422;
+			width: 990px;
+			height: 44px;
+		}
+		.sy1{
+			float: left;
+		}
+		.rz1{
+			float: left;
+			padding: 0 20px;
+			margin-left:150px;
+
+		}
+		.ooop{
+			padding: 0 20px;
+			line-height: 44px;
+			font-size: 15px;
+			color:#fff;
+
+		}
+		.uo{
+			float: left;
+			color:#fff;
+			font-size: 12px;
+			margin-left: 90px;
+			margin-top: 8px;
+		}
+		.uo1{
+			float: left;
+			color:#fff;
+			font-size: 12px;
+			margin-left: 220px;
+			margin-top: 8px;
+		}
+		.uo2{
+			float: left;
+			color:#fff;
+			font-size: 12px;
+			margin-left: 320px;
+			margin-top: 8px;
+		}
+		.bdd{
+			float: left;
+			margin-top: 40px;
+			margin-left: -250px;
+        }
+        .yj{
+            width: 80%;
+            height: 90px;
+            margin: 0 auto;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .yj img{
+            width: 30%;
+            height: 80%;
+        }
+        .hz{
+            width: 80%;
+            height: 160px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        .hz h2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+            border-bottom: 2px solid red;
+            background-color: #f6f6f6;
+        }
+        .im{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .hz p{
+            margin-left: 100px;
+        }
+        .hz p span{
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        /* footer */
+        footer{
+            width: 80%;
+            height: 155px;
+            margin: 0 auto;
+            background-color: #fffd;
+        }
+        .nav1{
+            margin-top: 10px;
+        background: #921422;
+        width: 100%;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+    }
+    .sy1{
+       width: 100%;
+       margin: 0 auto;
+    }
+    .rz1{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 20px;
+        margin-left:150px;
+    }
+    .ooop{
+        padding: 0 60px;
+        line-height: 44px;
+        font-size: 15px;
+        color:#fff;
+
+    }
+    .uo{
+        width: 80%;
+        margin:  0 auto;
+        text-align: center;
+        color:#fff;
+        font-size: 12px;
+        margin-left: 90px;
+        margin-top: 8px;
+    }
+    .uo1{
+        width: 60%;
+        margin:  0 auto;
+        text-align: center;
+
+        color:#fff;
+        font-size: 12px;
+        margin-left: 220px;
+        margin-top: 8px;
+    }
+    .uo2{
+        width: 50%;
+        margin:  0 auto;
+        text-align: center;
+
+        color:#fff;
+        font-size: 12px;
+        margin-left: 320px;
+        margin-top: 8px;
+    }
+    .bdd{
+        /* text-align: center; */
+
+        /* margin-top: 40px; */
+        /* margin-left: -250px; */
+    }
